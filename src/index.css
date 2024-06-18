@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-stone-50;
+  @apply bg-neutral-50;
 }

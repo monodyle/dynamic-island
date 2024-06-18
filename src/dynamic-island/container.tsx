@@ -11,7 +11,7 @@ export function Container({ children }: React.PropsWithChildren) {
 
   return (
     <motion.button
-      className="items-center justify-center w-0 h-0 mx-auto text-center text-white transition duration-300 ease-in-out bg-stone-900 hover:shadow-lg"
+      className="items-center justify-center w-0 h-0 mx-auto text-center text-white transition duration-300 ease-in-out bg-black hover:shadow-lg"
       animate={{
         width: presets[state].width,
         height: presets[state].ratio * presets[state].width,

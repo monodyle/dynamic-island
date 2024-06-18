@@ -10,7 +10,7 @@ export function Song() {
         <p className="overflow-hidden font-medium text-white truncate whitespace-nowrap">
           New Jeans
         </p>
-        <p className="overflow-hidden truncate text-stone-400 whitespace-nowrap">NewJeans</p>
+        <p className="overflow-hidden truncate text-neutral-400 whitespace-nowrap">NewJeans</p>
       </div>
       <div className="grid place-items-end">
         <Equalizer />

@@ -8,15 +8,15 @@ function App() {
           <MusicDynamicIsland />
         </div>
         <div className="text-center">
-          <p className="text-sm font-medium text-stone-700">
+          <p className="text-sm font-medium text-neutral-700">
             dynamic island by
             {" "}
-            <a href="https://github.com/monodyle/" target="_blank" rel="noopener noreferrer" className="underline decoration-dashed hover:text-purple-500 decoration-stone-300">monodyle</a>
+            <a href="https://github.com/monodyle/" target="_blank" rel="noopener noreferrer" className="underline decoration-dashed hover:text-purple-500 decoration-neutral-300">monodyle</a>
           </p>
-          <p className="text-sm text-stone-700">
-            <a href="https://github.com/monodyle/dynamic-island" target="_blank" rel="noopener noreferrer" className="underline decoration-dashed hover:text-purple-500 decoration-stone-300">github</a>
+          <p className="text-sm text-neutral-700">
+            <a href="https://github.com/monodyle/dynamic-island" target="_blank" rel="noopener noreferrer" className="underline decoration-dashed hover:text-purple-500 decoration-neutral-300">github</a>
             ・
-            <a href="https://ko-fi.com/monodyle" target="_blank" rel="noopener noreferrer" className="underline decoration-dashed hover:text-purple-500 decoration-stone-300">buy me a coffee</a>
+            <a href="https://ko-fi.com/monodyle" target="_blank" rel="noopener noreferrer" className="underline decoration-dashed hover:text-purple-500 decoration-neutral-300">buy me a coffee</a>
           </p>
         </div>
       </div>

@@ -19,7 +19,7 @@ type StickProps = {
 function Stick({ length = 50 }: StickProps) {
   return (
     <motion.div
-      className="h-6 flex-shrink-0 rounded-full bg-stone-50 w-0.5"
+      className="h-6 flex-shrink-0 rounded-full bg-neutral-50 w-0.5"
       animate={{ height: getLoopingRandomInt(28, 6, length) }}
       transition={{
         duration: 1.06,
