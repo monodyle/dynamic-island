@@ -1,7 +1,25 @@
+import { MusicDynamicIsland } from "./music/music"
+
 function App() {
   return (
-    <div className="w-screen h-screen grid place-items-center">
-      <h1 className="text-xl font-medium">Recat Starter Pack 🎒</h1>
+    <div className="grid w-screen h-screen p-2 lg:p-9">
+      <div className="flex flex-col w-full max-w-lg gap-6 mx-auto">
+        <div className="flex justify-center flex-1">
+          <MusicDynamicIsland />
+        </div>
+        <div className="text-center">
+          <p className="text-sm font-medium text-stone-700">
+            dynamic island by
+            {" "}
+            <a href="https://github.com/monodyle/" target="_blank" rel="noopener noreferrer" className="underline decoration-dashed hover:text-purple-500 decoration-stone-300">monodyle</a>
+          </p>
+          <p className="text-sm text-stone-700">
+            <a href="https://github.com/monodyle/dynamic-island" target="_blank" rel="noopener noreferrer" className="underline decoration-dashed hover:text-purple-500 decoration-stone-300">github</a>
+            ・
+            <a href="https://ko-fi.com/monodyle" target="_blank" rel="noopener noreferrer" className="underline decoration-dashed hover:text-purple-500 decoration-stone-300">buy me a coffee</a>
+          </p>
+        </div>
+      </div>
     </div>
   )
 }

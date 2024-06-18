@@ -1,5 +1,5 @@
 {
-  "name": "react-starter-pack",
+  "name": "dynamic-island",
   "type": "module",
   "version": "0.0.0",
   "private": true,
@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^11.2.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
