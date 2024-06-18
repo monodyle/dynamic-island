@@ -1,1 +1,1 @@
-export const physics = { stiffness: 400, damping: 30 }
+export const physics = { stiffness: 420, damping: 26 }
