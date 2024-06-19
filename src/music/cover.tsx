@@ -13,7 +13,7 @@ export function MiniCover({ cover, title }: Song) {
 
 export function Cover({ cover, title }: Song) {
   return (
-    <DynamicIsland.Box hide="collapsed">
+    <DynamicIsland.Box hide="compact">
       <div className="w-16 h-16 overflow-hidden rounded-2xl">
         <img src={cover} alt={title} className="block w-full h-full" />
       </div>

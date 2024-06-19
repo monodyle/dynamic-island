@@ -4,10 +4,10 @@ import { Box } from "./box"
 
 type DynamicIslandContentProps = React.PropsWithChildren & Pick<React.HTMLAttributes<HTMLDivElement>, "className">
 
-export function CollapsedContent({ children, ...props }: DynamicIslandContentProps) {
+export function CompactContent({ children, ...props }: DynamicIslandContentProps) {
   const { state } = useContext(DynamicIslandContext)
 
-  if (state !== "collapsed") {
+  if (state !== "compact") {
     return null
   }
   return <Box hide="expanded" size={state} {...props}>{children}</Box>
@@ -19,5 +19,5 @@ export function ExpandedContent({ children, ...props }: DynamicIslandContentProp
   if (state !== "expanded") {
     return null
   }
-  return <Box hide="collapsed" size={state} {...props}>{children}</Box>
+  return <Box hide="compact" size={state} {...props}>{children}</Box>
 }

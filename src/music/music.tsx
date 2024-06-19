@@ -12,10 +12,10 @@ export function MusicDynamicIsland() {
   return (
     <DynamicIsland.Root>
       <DynamicIsland.Container>
-        <DynamicIsland.CollapsedContent className="flex items-center justify-between px-3" key="collapsed">
+        <DynamicIsland.CompactContent className="flex items-center justify-between px-3" key="compact">
           <MiniCover {...song} />
           <Equalizer />
-        </DynamicIsland.CollapsedContent>
+        </DynamicIsland.CompactContent>
         <DynamicIsland.ExpandedContent className="w-full h-full p-6 px-5" key="expanded">
           <Song song={song} />
           <Track song={song} />

@@ -1,12 +1,12 @@
 import type { HTMLMotionProps } from "framer-motion"
 import { motion, useWillChange } from "framer-motion"
 import { useContext } from "react"
-import { DynamicIslandContext, type DynamicIslandState } from "./root"
+import { DynamicIslandContext, type DynamicIslandPresentation } from "./root"
 import { physics } from "./physics"
 
 export function Box({ size, hide, ...props }: HTMLMotionProps<"div"> & {
-  hide: DynamicIslandState
-  size?: DynamicIslandState
+  hide: DynamicIslandPresentation
+  size?: DynamicIslandPresentation
 }) {
   const willChange = useWillChange()
   const { state } = useContext(DynamicIslandContext)

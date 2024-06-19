@@ -1,9 +1,9 @@
 import { DynamicIsland } from "#/dynamic-island"
-import { Icon } from "#/icon"
+import { Icon } from "#/com/icon"
 
 export function Controls() {
   return (
-    <DynamicIsland.Box hide="collapsed" className="grid items-center justify-center grid-cols-5 gap-3">
+    <DynamicIsland.Box hide="compact" className="grid items-center justify-center grid-cols-5 gap-3">
       <div />
       <div className="flex">
         <Icon name="skip" className="w-12 h-12 m-auto rotate-180" />

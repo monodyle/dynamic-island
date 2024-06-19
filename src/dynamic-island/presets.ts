@@ -1,18 +1,18 @@
-import type { DynamicIslandState } from "./root"
+import type { DynamicIslandPresentation } from "./root"
 
 type Presets = Record<
-  DynamicIslandState,
-  { width: number, ratio: number, borderRadius: number }
+  DynamicIslandPresentation,
+  { width: number, ratio: number, radius: number }
 >
 export const presets: Presets = {
-  collapsed: {
+  compact: {
     width: 240,
     ratio: 44 / 240,
-    borderRadius: 22,
+    radius: 22,
   },
   expanded: {
     width: 360,
     ratio: 200 / 360,
-    borderRadius: 44,
+    radius: 44,
   },
 }

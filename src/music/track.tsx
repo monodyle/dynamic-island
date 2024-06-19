@@ -11,7 +11,7 @@ type TrackProps = {
 }
 export function Track({ song }: TrackProps) {
   return (
-    <DynamicIsland.Box hide="collapsed" className="flex items-center gap-4 mt-4 mb-3">
+    <DynamicIsland.Box hide="compact" className="flex items-center gap-4 mt-4 mb-3">
       <div className="text-xs text-neutral-400">{formatTime(song.duration * percentage)}</div>
       <div className="flex-1 h-1.5 overflow-hidden rounded-full bg-neutral-700">
         <div className="h-full w-[25.69%] bg-white" />

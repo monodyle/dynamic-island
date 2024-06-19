@@ -8,7 +8,7 @@ type SongProps = {
 }
 export function Song({ song }: SongProps) {
   return (
-    <DynamicIsland.Box hide="collapsed" className="grid items-center justify-center grid-cols-[64px_repeat(4,minmax(0,1fr))] gap-5">
+    <DynamicIsland.Box hide="compact" className="grid items-center justify-center grid-cols-[64px_repeat(4,minmax(0,1fr))] gap-5">
       <Cover {...song} />
       <div className="col-span-3 overflow-hidden text-left">
         <p className="overflow-hidden text-lg font-medium leading-tight text-white truncate whitespace-nowrap">

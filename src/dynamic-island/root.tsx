@@ -1,21 +1,21 @@
 import React, { createContext, useCallback, useMemo, useState } from "react"
 
-export type DynamicIslandState = "collapsed" | "expanded"
+export type DynamicIslandPresentation = "compact" | "expanded"
 
 type DynamicIslandContextValue = {
-  state: DynamicIslandState
-  setState: React.Dispatch<React.SetStateAction<DynamicIslandState>>
+  state: DynamicIslandPresentation
+  setState: React.Dispatch<React.SetStateAction<DynamicIslandPresentation>>
   toggleState: () => void
 }
 export const DynamicIslandContext = createContext<DynamicIslandContextValue>({
-  state: "collapsed",
+  state: "compact",
   setState: () => void 0,
   toggleState: () => void 0,
 })
 
 export function Root({ children }: React.PropsWithChildren) {
-  const [state, setState] = useState<DynamicIslandContextValue["state"]>("collapsed")
-  const toggleState = useCallback(() => setState(prev => prev === "collapsed" ? "expanded" : "collapsed"), [])
+  const [state, setState] = useState<DynamicIslandContextValue["state"]>("compact")
+  const toggleState = useCallback(() => setState(prev => prev === "compact" ? "expanded" : "compact"), [])
 
   const value = useMemo(() => ({ state, setState, toggleState }), [state, toggleState])
   return (
