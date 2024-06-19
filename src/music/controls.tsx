@@ -4,15 +4,15 @@ import { Icon } from "#/icon"
 export function Controls() {
   return (
     <DynamicIsland.Box hide="collapsed" className="grid items-center justify-center grid-cols-5 gap-3">
-      <div className="h-11" />
+      <div />
       <div className="flex">
-        <Icon name="skip" className="m-auto rotate-180 w-7 h-7" />
+        <Icon name="skip" className="w-12 h-12 m-auto rotate-180" />
       </div>
       <div className="flex">
-        <Icon name="play" className="m-auto w-7 h-7" />
+        <Icon name="play" className="w-12 h-12 m-auto" />
       </div>
       <div className="flex">
-        <Icon name="skip" className="m-auto w-7 h-7" />
+        <Icon name="skip" className="w-12 h-12 m-auto" />
       </div>
     </DynamicIsland.Box>
   )

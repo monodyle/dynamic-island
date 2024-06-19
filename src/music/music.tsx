@@ -16,7 +16,7 @@ export function MusicDynamicIsland() {
           <MiniCover {...song} />
           <Equalizer />
         </DynamicIsland.CollapsedContent>
-        <DynamicIsland.ExpandedContent className="w-full h-full p-6" key="expanded">
+        <DynamicIsland.ExpandedContent className="w-full h-full p-6 px-5" key="expanded">
           <Song song={song} />
           <Track song={song} />
           <Controls />

@@ -12,7 +12,7 @@ export const presets: Presets = {
   },
   expanded: {
     width: 360,
-    ratio: 210 / 360,
+    ratio: 200 / 360,
     borderRadius: 44,
   },
 }
